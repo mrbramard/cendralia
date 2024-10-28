@@ -44,15 +44,15 @@ img {
 
 footer {
   background-color: #44554c;
-  margin: none;
+  margin: auto;
+  width: 50%;
   margin-top: 2em;
   display: flex;
   min-height: 80px;
+  padding: 1em 2em 1em 2em;
 }
 
 footer > * {
-  margin: auto;
-  width: 50%;
   color: #ffe7cc;
 }
 

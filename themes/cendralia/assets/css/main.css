@@ -45,11 +45,18 @@ main {
   margin: auto;
   background-color: #f4f0d7;
   max-width: 800px;
+  width: 100%;
   padding: 1em 2em 1em 2em;
 }
 
 img {
+  max-width: 100%;
+}
+
+img.banner {
   width: 100%;
+  max-height: 300px;
+  object-fit:cover;
 }
 
 footer {
@@ -146,4 +153,9 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.link-return {
+  display: inline-block;
+  margin-bottom: 1em;
 }

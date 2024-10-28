@@ -21,6 +21,7 @@ header > h1 {
 
 .title {
   text-decoration: none;
+  padding: 0;
 }
 
 body {
@@ -35,7 +36,8 @@ h1 {
 }
 
 h2 {
-  font-weight: medium;
+  font-weight: bold;
+  margin: 0;
 }
 
 main {
@@ -74,11 +76,13 @@ footer > * {
   background-color: transparent;
   color: #171c19;
   text-decoration: none;
+  padding: 0;
 }
 
 a {
   background-color: #44554c;
   color: #f4f0d7;
+  padding: .2em;
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -99,24 +103,42 @@ a {
   }
 }
 
-.pill { 
+.tags {
+  display: flex;
+  gap: .5em;
+  align-items: center;
+}
+
+.tag { 
   text-decoration: none;
   padding: .5em 1.5em .5em 1.5em ;
   border: 1px solid #44554c;
   background-color: transparent; 
   color: #44554c;
   font-size: small;
-  border-radius: 99px;
+  align-self: flex-start;
 }
 
 .posts-list {
   margin-top: 2em;
   display: flex;
   flex-direction: column;
-  gap: 2em;
+  gap: 3em;
   padding: 0;
 }
 
 .posts-list-item {
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.read-more {
+  align-self: flex-end;
+}
+
+.post-infos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }

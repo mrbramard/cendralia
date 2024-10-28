@@ -3,19 +3,24 @@
   <ul class="posts-list">
   {{ range site.RegularPages }}
     <li class="posts-list-item">
-      {{ range .Params.tags }}
-        <a class="pill" href="{{ "tags/" | relURL }}{{ . | urlize }}">{{ . }}</a>
-      {{ end }}
       <h2>
         <div class="post-title">
           <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
         </div>
       </h2>
+      <span>{{ .Date | time.Format ":date_medium" }}</span>
       {{ .Summary }}
-      {{ if .Truncated }}
-        <a href="{{ .RelPermalink }}">Lire plus...</a>
-        <br>
-      {{ end }}
+      <div class="post-infos">
+      <div class="tags">
+        <span>Tags : </span>
+        {{ range .Params.tags }}
+          <a class="tag" href="{{ "tags/" | relURL }}{{ . | urlize }}">{{ . }}</a>
+        {{ end }}
+      </div>
+        {{ if .Truncated }}
+          <a class="read-more" href="{{ .RelPermalink }}">Lire plus...</a>
+        {{ end }}
+      </div>
     </li>
   {{ end }}
   </ul>

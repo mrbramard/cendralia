@@ -1,22 +1,26 @@
 html {
-  background-color: #f3eed1;
+  background-color: #f4f0d7;
   color: #171c19;
   font-family: 'League Spartan', sans-serif;
-  background-image: url("/images/background.png");
   margin: none;
 }
 
 header {
   display: flex;
   justify-content: center;
+  border-bottom: 2px solid #44554c;
 }
 
 header > h1 {
-  color: #ffe7cc;
+  color: #f4f0d7;
   background-color: #44554c;
   padding: .2em 1em .1em 1em;
-  font-size: 3em;
+  font-size: 2em;
   font-variant: small-caps;
+}
+
+.title {
+  text-decoration: none;
 }
 
 body {
@@ -30,22 +34,24 @@ h1 {
   font-weight: bold;
 }
 
+h2 {
+  font-weight: bold;
+}
+
 main {
   flex: 1;
   margin: auto;
-  background-color: #f3eed1;
+  background-color: #f4f0d7;
   width: 50%;
   padding: 1em 2em 1em 2em;
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
 }
 
 footer {
   background-color: #44554c;
-  margin: auto;
-  width: 50%;
   margin-top: 2em;
   display: flex;
   min-height: 80px;
@@ -53,10 +59,35 @@ footer {
 }
 
 footer > * {
+  margin: auto;
+  width: 50%;
   color: #ffe7cc;
 }
 
+.post-title {
+  padding: 1em;
+}
+
 a {
-  color: #44554c;
+  background-color: #44554c;
+  color: #f4f0d7;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 768px) {
+  main {
+    width: auto;
+    padding: 1em;
+    margin: 0;
+  }
+
+  header, footer {
+    width: auto;
+  }
+
+  footer > * {
+    margin: 0;
+    width: 100%;
+  }
 }
 

@@ -8,20 +8,20 @@ html {
 header {
   display: flex;
   justify-content: center;
-  border-bottom: 2px solid #44554c;
+  border-bottom: 1px solid #44554c;
 }
 
 header > h1 {
   color: #f4f0d7;
   background-color: #44554c;
   padding: .2em 1em .1em 1em;
-  font-size: 2em;
-  font-variant: small-caps;
 }
 
 .title {
   text-decoration: none;
   padding: 0;
+  font-size: 1em;
+  font-variant: small-caps;
 }
 
 body {
@@ -44,7 +44,7 @@ main {
   flex: 1;
   margin: auto;
   background-color: #f4f0d7;
-  width: 50%;
+  max-width: 800px;
   padding: 1em 2em 1em 2em;
 }
 
@@ -62,14 +62,15 @@ footer {
 
 footer > * {
   margin: auto;
-  width: 50%;
-  color: #ffe7cc;
+  max-width: 800px;
+  color: #f4f0d7;
 }
 
 .post-title {
   background-color: transparent;
   color: #171c19;
   font-size: xx-large;
+  margin-bottom: .2em;
 }
 
 .post-title > a {
@@ -77,12 +78,16 @@ footer > * {
   color: #171c19;
   text-decoration: none;
   padding: 0;
+  border: none;
+  font-size: xx-large;
 }
 
 a {
   background-color: #44554c;
   color: #f4f0d7;
-  padding: .2em;
+  padding: .5em 1.5em .5em 1.5em ;
+  border: 1px solid #44554c;
+  font-size: small;
 }
 
 /* Extra small devices (phones, 600px and down) */

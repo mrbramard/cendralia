@@ -2,6 +2,10 @@ baseURL = 'https://cendralia.com/'
 languageCode = 'fr-CA'
 title = 'Cendralia'
 theme = 'cendralia'
+summaryLength = 10
+
+[taxonomy]
+tag= "tags"
 
 [[module.mounts]]
 source = 'static'
@@ -10,3 +14,4 @@ target = 'static'
 [[module.mounts]]
 source = 'images'
 target = 'static/images'
+

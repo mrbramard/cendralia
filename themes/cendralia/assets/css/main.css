@@ -35,7 +35,7 @@ h1 {
 }
 
 h2 {
-  font-weight: bold;
+  font-weight: medium;
 }
 
 main {
@@ -65,7 +65,15 @@ footer > * {
 }
 
 .post-title {
-  padding: 1em;
+  background-color: transparent;
+  color: #171c19;
+  font-size: xx-large;
+}
+
+.post-title > a {
+  background-color: transparent;
+  color: #171c19;
+  text-decoration: none;
 }
 
 a {
@@ -91,3 +99,24 @@ a {
   }
 }
 
+.pill { 
+  text-decoration: none;
+  padding: .5em 1.5em .5em 1.5em ;
+  border: 1px solid #44554c;
+  background-color: transparent; 
+  color: #44554c;
+  font-size: small;
+  border-radius: 99px;
+}
+
+.posts-list {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  padding: 0;
+}
+
+.posts-list-item {
+  list-style-type: none;
+}

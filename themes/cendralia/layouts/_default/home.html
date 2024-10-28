@@ -1,11 +1,22 @@
 {{ define "main" }}
   {{ .Content }}
+  <ul class="posts-list">
   {{ range site.RegularPages }}
-    <h2>
-      <div class="post-title">
-        <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
-      </div>
-    </h2>
-    {{ .Summary }}
+    <li class="posts-list-item">
+      {{ range .Params.tags }}
+        <a class="pill" href="{{ "tags/" | relURL }}{{ . | urlize }}">{{ . }}</a>
+      {{ end }}
+      <h2>
+        <div class="post-title">
+          <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+        </div>
+      </h2>
+      {{ .Summary }}
+      {{ if .Truncated }}
+        <a href="{{ .RelPermalink }}">Lire plus...</a>
+        <br>
+      {{ end }}
+    </li>
   {{ end }}
+  </ul>
 {{ end }}

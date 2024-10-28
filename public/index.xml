@@ -10,9 +10,9 @@
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Règles</title>
-      <link>http://localhost:1313/r%C3%A8gles/</link>
+      <link>http://localhost:1313/regles/</link>
       <pubDate>Sun, 27 Oct 2024 17:20:33 -0400</pubDate>
-      <guid>http://localhost:1313/r%C3%A8gles/</guid>
+      <guid>http://localhost:1313/regles/</guid>
       <description>&lt;h1 id=&#34;sommaire-des-règles-utilisées-pour-cendralia&#34;&gt;Sommaire des règles utilisées pour Cendralia&lt;/h1&gt;&#xA;&lt;p&gt;Le système de jeu est basé sur Old School Essentials Advanced, un retro-clone de la gamme Basic/eXpert (BX) de Donjons et Dragons sortie en 1981.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Classes et Races séparées&lt;/li&gt;&#xA;&lt;li&gt;Classe d&amp;rsquo;Armure ascendante&lt;/li&gt;&#xA;&lt;li&gt;Compétences d&amp;rsquo;armes&lt;/li&gt;&#xA;&lt;li&gt;Inventaire par emplacements (slots)&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>

@@ -2,7 +2,7 @@
   <img class="banner" src="/images/home-banner.png">
   {{ .Content }}
   <ul class="posts-list">
-  {{ range site.RegularPages }}
+  {{ range where .Site.RegularPages "Params.hidden" "ne" true }}
     <li class="posts-list-item">
       <h2 class="post-title">
         <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>

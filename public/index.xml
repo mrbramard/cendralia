@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cendralia</title>
-    <link>http://localhost:1313/</link>
+    <link>https://cendralia.com/</link>
     <description>Recent content on Cendralia</description>
     <generator>Hugo</generator>
     <language>fr-CA</language>
     <lastBuildDate>Mon, 28 Oct 2024 21:43:45 -0400</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://cendralia.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Search</title>
-      <link>http://localhost:1313/search/</link>
+      <link>https://cendralia.com/search/</link>
       <pubDate>Mon, 28 Oct 2024 21:43:45 -0400</pubDate>
-      <guid>http://localhost:1313/search/</guid>
+      <guid>https://cendralia.com/search/</guid>
       <description></description>
     </item>
     <item>
       <title>Sommaire des règles appliquées pour Cendralia</title>
-      <link>http://localhost:1313/regles/</link>
+      <link>https://cendralia.com/regles/</link>
       <pubDate>Sun, 27 Oct 2024 17:20:33 -0400</pubDate>
-      <guid>http://localhost:1313/regles/</guid>
+      <guid>https://cendralia.com/regles/</guid>
       <description>&lt;p&gt;Le système de jeu est basé sur Old School Essentials Advanced, un retro-clone de la gamme Basic/eXpert (BX) de Donjons et Dragons sortie en 1981.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Histoire de Cendralia</title>
-      <link>http://localhost:1313/histoire/</link>
+      <link>https://cendralia.com/histoire/</link>
       <pubDate>Sat, 26 Oct 2024 00:57:08 -0400</pubDate>
-      <guid>http://localhost:1313/histoire/</guid>
+      <guid>https://cendralia.com/histoire/</guid>
       <description>&lt;p&gt;Cendralia était autrefois un grand empire millénaire.&lt;/p&gt;</description>
     </item>
   </channel>

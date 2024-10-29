@@ -1,6 +1,10 @@
 <div class="header-container">
-    <a class="title-link" href="/">
-        {{ partial "logo.svg" }}
-    </a>
+    <div class="header-icon-logo">
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">☰</label>
+        <a class="title-link" href="/">
+            {{ partial "logo.svg" }}
+        </a>
+    </div>
     {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
 </div>

@@ -7,30 +7,48 @@ html {
 
 header {
   border-bottom: 1px solid #44554c;
-  height: 78px;
 }
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
 
 .header-container {
   display: flex;
   justify-content: space-between;
   margin: auto;
-  width: 100%;
   max-width: 800px;
   align-items: center;
+  padding: 1em;
 }
 
-.title-site {
-  font-weight: bold;
-  font-size: xx-large;
+.header-icon-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1em;
 }
 
 .title-link {
-  text-decoration: none;
-  padding: 8px;
-  font-size: 1em;
+  display: flex;
   color: #44554c;
   background-color: #f4f0d7;
   border: none;
+  height: 3.5em;
+  padding: 0;
+  margin: 0;
+}
+
+.title-link > svg {
+  height: 100%;
+  width: auto;
 }
 
 body {
@@ -106,16 +124,25 @@ footer > * {
   font-size: xx-large;
 }
 
+.post-title > a:hover {
+  text-decoration: underline;
+}
+
 a {
   background-color: #44554c;
   color: #f4f0d7;
   padding: .5em 1.5em .5em 1.5em ;
   border: 1px solid #44554c;
   font-size: small;
+  transition: font-weight 0.2s ease, color 0.2s ease, text-decoration 0.2s ease;
+}
+
+a:hover {
+  font-weight: bold;
 }
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
   main {
     width: auto;
     padding: 1em;
@@ -129,6 +156,26 @@ a {
   footer > * {
     margin: 0;
     width: 100%;
+  }
+
+  .header-container {
+    flex-direction: column;
+    gap: 1em;
+    align-items: flex-start;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    transition: display 0.3s ease-in;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  div:has(#menu-toggle:checked) ~ .menu {
+    display: flex;
   }
 }
 
@@ -182,10 +229,22 @@ a {
   flex-direction: row;
   gap: 1em;
   align-items: center;
+  padding: 0;
+  margin: 0;
 }
 
 .nav-list-item {
   list-style-type: none;
-  height: 45px;
   align-content: center;
+}
+
+.nav-list-item > a {
+  font-size: medium;
+  display: inline-block;
+}
+
+.nav-list-item > a:not(.active) {
+  background-color: transparent;
+  border: none;
+  color: #44554c;
 }

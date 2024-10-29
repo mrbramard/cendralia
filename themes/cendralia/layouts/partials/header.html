@@ -1,6 +1,6 @@
 <div class="header-container">
-    <span class="title-site">
-        <a class="title-link" href="/">{{ site.Title }}</a>
-    </span>
+    <a class="title-link" href="/">
+        {{ partial "logo.svg" }}
+    </a>
     {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
 </div>

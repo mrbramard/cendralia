@@ -6,8 +6,15 @@
     <description>Recent content on Cendralia</description>
     <generator>Hugo</generator>
     <language>fr-CA</language>
-    <lastBuildDate>Sun, 27 Oct 2024 17:20:33 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 28 Oct 2024 21:43:45 -0400</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Search</title>
+      <link>http://localhost:1313/search/</link>
+      <pubDate>Mon, 28 Oct 2024 21:43:45 -0400</pubDate>
+      <guid>http://localhost:1313/search/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Sommaire des règles appliquées pour Cendralia</title>
       <link>http://localhost:1313/regles/</link>

@@ -15,3 +15,12 @@ target = 'static'
 source = 'images'
 target = 'static/images'
 
+[menus]
+  [[menus.main]]
+    name = 'Accueil'
+    pageRef = '/'
+    weight = 10
+  [[menus.main]]
+    name = 'Rechercher'
+    pageRef = '/search'
+    weight = 20

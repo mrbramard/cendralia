@@ -17,24 +17,44 @@
 </head>
 <body>
   <header>
-    <h1><a class="title" href="/">Cendralia</a></h1>
+    <div class="header-container">
+    <span class="title-site">
+        <a class="title-link" href="/">Cendralia</a>
+    </span>
+    
+  <nav>
+    <ul class="nav-list">
+    <li class="nav-list-item">
+      <a aria-current="page" class="active" href="/">Accueil</a>
+    </li>
+    <li class="nav-list-item">
+      <a href="/search/">Rechercher</a>
+    </li>
+    </ul>
+  </nav>
 
-
+</div>
 
   </header>
   <main>
     
-  <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
-  <script src="/pagefind/pagefind-ui.js"></script>
-  <div id="search"></div>
-  <script>
-      window.addEventListener('DOMContentLoaded', (event) => {
-          new PagefindUI({ element: "#search", showSubResults: true });
-      });
-  </script>
   <img class="banner" src="/images/home-banner.png">
   
   <ul class="posts-list">
+  
+    <li class="posts-list-item">
+      <h2 class="post-title">
+        <a href="/search/">Search</a>
+      </h2>
+      <span>October 28, 2024</span>
+      
+      <div class="post-infos">
+        
+
+  
+        
+      </div>
+    </li>
   
     <li class="posts-list-item">
       <h2 class="post-title">

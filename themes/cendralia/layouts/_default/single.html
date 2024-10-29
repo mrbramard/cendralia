@@ -1,13 +1,15 @@
 {{ define "main" }}
-  <a href="/" class="link-return">Retour</a>
-  {{ if .Params.banner }}
-    <img class="banner" src="{{ .Params.banner }}" alt="{{ .Title }}">
-  {{ end }}
-  <h1 class="post-title">{{ .Title }}</h1>
-  {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
-  {{ $dateHuman := .Date | time.Format ":date_long" }}
-  <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+  <div data-pagefind-body>
+    <a href="/" class="link-return">Retour</a>
+    {{ if .Params.banner }}
+      <img data-pagefind-meta="image[src]" class="banner" src="{{ .Params.banner }}" alt="{{ .Title }}">
+    {{ end }}
+    <h1 data-pagefind-meta="title" class="post-title">{{ .Title }}</h1>
+    {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+    {{ $dateHuman := .Date | time.Format ":date_long" }}
+    <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
 
-  {{ .Content }}
-  {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+    {{ .Content }}
+    {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+  </div>
 {{ end }}

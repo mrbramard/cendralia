@@ -248,3 +248,36 @@ a:hover {
   border: none;
   color: #44554c;
 }
+
+table {
+  border: 1px solid #44554c;
+  border-collapse: collapse;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  display: block;
+  width: 100%;
+  max-width: max-content;
+  overflow-x: auto;
+}
+
+thead tr {
+  background-color: #44554c;
+  color:#f4f0d7;
+  text-align: left;
+  padding: 12px 15px;
+}
+
+tr, td, th {
+  padding: 12px 15px;
+}
+
+tbody tr {
+  border-bottom: 1px solid #44554c;
+}
+
+tbody tr:nth-of-type(even) {
+  background-color: #44554c25;
+}
+
+tbody tr:hover {
+  background-color: #5258553b;
+}

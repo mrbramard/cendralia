@@ -1,32 +1,52 @@
 équipements:
   - nom: Aconit
     prix-en-po: 10
-    poids-en-emplacements:
+    poids-en-emplacements: 1
     description: |
       This herb can be used to repel lycanthropes.
       The creature must be hit with the herb in melee combat.
   - nom: Ail
     prix-en-po: 5 
-    poids-en-emplacements:
+    poids-en-emplacements: 0
     description: |
       Bulbe d'ail.
       Très utile contre les vampires.
   - nom: Boîte à amadou
     prix-en-po: 3 
-    poids-en-emplacements:
+    poids-en-emplacements: 1
     description: |
       Used to light fires, including torches.
       Using a tinder box takes one round.
       There is a 2-in-6 chance of success per round.
+  - nom: Bougies (10)
+    prix-en-po: 1
+    poids-en-emplacements: 2 (paquet)
   - nom: Bourse
     prix-en-po: 1
+    poids-en-emplacements: 1 (stocage)
+  - nom: Cadenas
+    prix-en-po: 20
+    poids-en-emplacements: 1
+  - nom: Chaîne (3 m)
+    prix-en-po: 30
+    poids-en-emplacements: 3
+  - nom: Chausse-trappes (sac de 20)
+    prix-en-po: 1
+    poids-en-emplacements: 2 (paquet)
   - nom: Cloche (miniature)
     prix-en-po: 1
+    poids-en-emplacements: 0 (petit)
+  - nom: Coffre (fer, grand)
+    prix-en-po: 30
+  - nom: Coffre (fer, petit)
+    prix-en-po: 10
   - nom: Corde (15 m)
     prix-en-po: 1 
     poids-en-emplacements:
     description: |
       Can hold the weight of approximately three human-sized beings.
+  - nom: Craie (10 bâtons)
+    prix-en-po: 1
   - nom: Eau bénite (fiole)
     prix-en-po: 25 
     poids-en-emplacements:
@@ -34,6 +54,8 @@
       Water that has been blessed by a holy person.
       It is used in some religious rituals and inflicts damage on undead monsters.
       Holy water does not retain its power if stored in any other container than the special vials it is blessed in.
+  - nom: Ficelle (boule de 30 m)
+    prix-en-po: 1
   - nom: Grappin
     prix-en-po: 25 
     poids-en-emplacements:
@@ -55,6 +77,8 @@
       Can be closed to hide the light.
       Burns one oil flask every four hours (24 turns).
       Casts light in a 30’ radius.
+  - nom: Lanterne bullseye
+    prix-en-po: 20
   - nom: Marteau (petit)
     prix-en-po: 2 
     poids-en-emplacements:
@@ -74,6 +98,8 @@
     poids-en-emplacements:
     description: |
       This container, made of hide, will hold 2 pints (1 quart) of fluid.
+  - nom: Palan
+    prix-en-po: 5
   - nom: Perche (3 m, bois)
     prix-en-po: 1 
     poids-en-emplacements:
@@ -122,6 +148,8 @@
     description: Has two straps and can be worn on the back, keeping the hands free. Holds up to 400 coins.
   - nom: Sac de couchage
     prix-en-po: 2
+  - nom: Seau
+    prix-en-po: 1
   - nom: Symbole sacré (argent)
     prix-en-po: 25 
     poids-en-emplacements:

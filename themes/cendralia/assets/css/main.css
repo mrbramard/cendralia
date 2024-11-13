@@ -127,7 +127,7 @@ footer > * {
 a { 
   transition: font-weight 0.2s ease, color 0.2s ease, text-decoration 0.2s ease;
   font-weight: bold;
-  color: #44554c';
+  color: #44554c;
 }
 
 a:active {

@@ -1,12 +1,14 @@
 html {
   background-color: #f4f0d7;
   color: #171c19;
-  font-family: 'League Spartan', sans-serif;
+  font-family: 'Alegreya', serif;
   margin: none;
+  overflow-y: scroll;
 }
 
 header {
   border-bottom: 1px solid #44554c;
+  font-family: 'League Spartan', sans-serif;
 }
 
 #menu-toggle {
@@ -18,7 +20,6 @@ header {
   cursor: pointer;
   font-size: x-large;
 }
-
 
 .header-container {
   display: flex;
@@ -65,14 +66,8 @@ body {
   --pagefind-ui-tag: #44554c;
 }
 
-h1 {
+h1, h2 {
   font-weight: bold;
-}
-
-h2 {
-  font-weight: bold;
-  margin: 0;
-
 }
 
 main {
@@ -128,13 +123,17 @@ footer > * {
   text-decoration: underline;
 }
 
-a {
-  background-color: #44554c;
-  color: #f4f0d7;
-  padding: .5em 1.5em .5em 1.5em ;
-  border: 1px solid #44554c;
-  font-size: small;
+a { 
   transition: font-weight 0.2s ease, color 0.2s ease, text-decoration 0.2s ease;
+  font-weight: bold;
+}
+
+a:active {
+  color: #44554c;
+}
+
+a:visited {
+  color: #44554c;
 }
 
 a:hover {
@@ -196,10 +195,9 @@ a:hover {
 }
 
 .posts-list {
-  margin-top: 2em;
   display: flex;
   flex-direction: column;
-  gap: 3em;
+  gap: 1em;
   padding: 0;
 }
 
